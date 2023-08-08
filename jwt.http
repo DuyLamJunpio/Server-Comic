@@ -1,0 +1,74 @@
+//Login user
+POST  http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+    "Username": "lamdd222",
+    "Password": "1234567"
+}
+###
+//list user
+GET  http://localhost:3000/api/user/list
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VybmFtZSI6ImJhY252MTExIiwiUGFzc3dvcmQiOiIxMjM0NTY3IiwiaWF0IjoxNjg4MTAwMTI1LCJleHAiOjE2ODgxMDAxODV9.aFnZ54HNgRMzcRbdRcUyb0lFf5oJW5Xq8QR7ZlZnzEY
+
+
+
+//CRUD Comic
+###
+//get list Comic
+GET http://localhost:3000/api/comic/listComic
+###
+
+###
+//add Comic
+POST http://localhost:3000/api/comic/addComic
+//body: 
+# {
+  "title": "My New Comic",
+  "author": "John Doe",
+  "avatar": "https://example.com/avatar.jpg",
+  "content": "This is the content of the comic.",
+  "date": "2023-08-05",
+  "chapters": [
+    {
+      "number": 1,
+      "images": [
+        "https://example.com/image1.jpg",
+        "https://example.com/image2.jpg"
+      ]
+    },
+    {
+      "number": 2,
+      "images": [
+        "https://example.com/image3.jpg",
+        "https://example.com/image4.jpg"
+      ]
+    }
+  ]
+}
+
+### 
+//detail sp
+GET http://localhost:3000/api/comic/detailComic/
+//params id: 6427f5352736ea4564bfe14f
+
+###
+//update sp
+POST http://localhost:3000/api/comic/editComic
+//params id: 6427f5352736ea4564bfe14f
+//body : 
+
+###
+//delete sp
+POST http://localhost:3000/api/comic/deleteComic
+//params id: 6427f5352736ea4564bfe14f
+
+//CRUD cmt
+get listCmt: http://localhost:3000/api/cmt/listCmt/
+add : http://localhost:3000/api/cmt/addCmt
+edit: http://localhost:3000/api/cmt/editCmt/
+delete: http://localhost:3000/api/cmt/deleteCmt
+
+
+
+
